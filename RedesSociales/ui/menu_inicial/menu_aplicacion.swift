@@ -7,12 +7,46 @@
 
 import SwiftUI
 
-struct menu_aplicacion: View {
+struct MenuNavegacion: View {
+    @Environment(ControladorAplicacion.self) var controlador
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+        TabView{
+           
+            
+            GeneralPublicaciones()
+                .tabItem { Label("esta es uan pantalla", systemImage: "Circlke") }
+                .badge(controlador.publicaciones.count)
+            
+            Text("Hola dos")
+                .tabItem {
+                    Label{
+                        Text("este es su menu desde abajo")
+                        Text("esto es un segundo clcik")
+                    }
+                icon: {
+                    Circle()
+                        .frame(width: 44, height: 44,
+                               alignment: .center)
+                        .overlay(Text("jj abrhans"))
+                }
+                }
+            
+            Text("Hola desdpe lptnalla 3")
+                .tabItem 
+            { Label("etiqueta de esta label", systemImage: "Circle") }
+            /*
+            Tab ("Etiqueta", )
+            }
+        */
+            Spacer()
+                    
+        }
+        }
     }
 }
 
 #Preview {
-    menu_aplicacion()
+    MenuNavegacion()
+        .environment(ControladorAplicacion())
 }
