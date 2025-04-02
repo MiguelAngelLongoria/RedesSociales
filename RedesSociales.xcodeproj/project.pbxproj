@@ -16,6 +16,11 @@
 		FB8233142D9AE89D0043AEC7 /* controlador_app.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8233132D9AE89D0043AEC7 /* controlador_app.swift */; };
 		FB8233172D9AEC7E0043AEC7 /* menu_aplicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8233162D9AEC7E0043AEC7 /* menu_aplicacion.swift */; };
 		FB8233192D9AFB9E0043AEC7 /* perfil_vista_basico.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8233182D9AFB9E0043AEC7 /* perfil_vista_basico.swift */; };
+		FBBFF1382D9D941A004B0B2F /* mono_chino.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBFF1372D9D941A004B0B2F /* mono_chino.swift */; };
+		FBBFF13A2D9D9668004B0B2F /* planeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBFF1392D9D9668004B0B2F /* planeta.swift */; };
+		FBBFF13C2D9D9757004B0B2F /* Transformacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBFF13B2D9D9757004B0B2F /* Transformacion.swift */; };
+		FBBFF13E2D9D98B8004B0B2F /* dragonball_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBFF13D2D9D98B8004B0B2F /* dragonball_api.swift */; };
+		FBBFF1412D9D9A90004B0B2F /* pagina_resultados.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBFF1402D9D9A90004B0B2F /* pagina_resultados.swift */; };
 		FBE6AF8A2D94615F0033557F /* RedesSocialesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6AF892D94615F0033557F /* RedesSocialesApp.swift */; };
 		FBE6AF8E2D94615F0033557F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE6AF8D2D94615F0033557F /* Assets.xcassets */; };
 		FBE6AF912D94615F0033557F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE6AF902D94615F0033557F /* Preview Assets.xcassets */; };
@@ -34,6 +39,11 @@
 		FB8233132D9AE89D0043AEC7 /* controlador_app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controlador_app.swift; sourceTree = "<group>"; };
 		FB8233162D9AEC7E0043AEC7 /* menu_aplicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_aplicacion.swift; sourceTree = "<group>"; };
 		FB8233182D9AFB9E0043AEC7 /* perfil_vista_basico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfil_vista_basico.swift; sourceTree = "<group>"; };
+		FBBFF1372D9D941A004B0B2F /* mono_chino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mono_chino.swift; sourceTree = "<group>"; };
+		FBBFF1392D9D9668004B0B2F /* planeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planeta.swift; sourceTree = "<group>"; };
+		FBBFF13B2D9D9757004B0B2F /* Transformacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformacion.swift; sourceTree = "<group>"; };
+		FBBFF13D2D9D98B8004B0B2F /* dragonball_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragonball_api.swift; sourceTree = "<group>"; };
+		FBBFF1402D9D9A90004B0B2F /* pagina_resultados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagina_resultados.swift; sourceTree = "<group>"; };
 		FBE6AF862D94615F0033557F /* RedesSociales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedesSociales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE6AF892D94615F0033557F /* RedesSocialesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedesSocialesApp.swift; sourceTree = "<group>"; };
 		FBE6AF8D2D94615F0033557F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +79,25 @@
 				FB8233162D9AEC7E0043AEC7 /* menu_aplicacion.swift */,
 			);
 			path = menu_inicial;
+			sourceTree = "<group>";
+		};
+		FBBFF1362D9D93F5004B0B2F /* dragon_ball */ = {
+			isa = PBXGroup;
+			children = (
+				FBBFF13F2D9D9A71004B0B2F /* soporte */,
+				FBBFF1372D9D941A004B0B2F /* mono_chino.swift */,
+				FBBFF1392D9D9668004B0B2F /* planeta.swift */,
+				FBBFF13B2D9D9757004B0B2F /* Transformacion.swift */,
+			);
+			path = dragon_ball;
+			sourceTree = "<group>";
+		};
+		FBBFF13F2D9D9A71004B0B2F /* soporte */ = {
+			isa = PBXGroup;
+			children = (
+				FBBFF1402D9D9A90004B0B2F /* pagina_resultados.swift */,
+			);
+			path = soporte;
 			sourceTree = "<group>";
 		};
 		FBE6AF7D2D94615E0033557F = {
@@ -122,6 +151,7 @@
 		FBE6AF9E2D9461F70033557F /* modelos */ = {
 			isa = PBXGroup;
 			children = (
+				FBBFF1362D9D93F5004B0B2F /* dragon_ball */,
 				FBE6AFAC2D9463440033557F /* comentario.swift */,
 				FB82330B2D9AE7660043AEC7 /* perfil.swift */,
 				FB82330D2D9AE77E0043AEC7 /* Publicacion.swift */,
@@ -134,6 +164,7 @@
 			children = (
 				FB8233072D9AE7270043AEC7 /* errores.swift */,
 				FB8233092D9AE7410043AEC7 /* placeholder_api.swift */,
+				FBBFF13D2D9D98B8004B0B2F /* dragonball_api.swift */,
 			);
 			path = servicios_API;
 			sourceTree = "<group>";
@@ -232,12 +263,17 @@
 				FB8233192D9AFB9E0043AEC7 /* perfil_vista_basico.swift in Sources */,
 				FBE6AF8A2D94615F0033557F /* RedesSocialesApp.swift in Sources */,
 				FBE6AF982D9461AF0033557F /* ContentView.swift in Sources */,
+				FBBFF13C2D9D9757004B0B2F /* Transformacion.swift in Sources */,
+				FBBFF1382D9D941A004B0B2F /* mono_chino.swift in Sources */,
+				FBBFF1412D9D9A90004B0B2F /* pagina_resultados.swift in Sources */,
 				FB82330E2D9AE77E0043AEC7 /* Publicacion.swift in Sources */,
+				FBBFF13E2D9D98B8004B0B2F /* dragonball_api.swift in Sources */,
 				FB8233082D9AE7270043AEC7 /* errores.swift in Sources */,
 				FB8233102D9AE7EB0043AEC7 /* publicaciones_generales.swift in Sources */,
 				FB8233122D9AE87D0043AEC7 /* controlador_publicaciones.swift in Sources */,
 				FBE6AFAD2D9463440033557F /* comentario.swift in Sources */,
 				FB82330A2D9AE7410043AEC7 /* placeholder_api.swift in Sources */,
+				FBBFF13A2D9D9668004B0B2F /* planeta.swift in Sources */,
 				FB8233142D9AE89D0043AEC7 /* controlador_app.swift in Sources */,
 				FBE6AFAB2D9462AD0033557F /* publicacion.swift in Sources */,
 			);

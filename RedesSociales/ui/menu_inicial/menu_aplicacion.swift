@@ -21,8 +21,8 @@ struct MenuNavegacion: View {
             Text("Hola dos")
                 .tabItem {
                     Label{
-                        Text("este es su menu desde abajo")
-                        Text("esto es un segundo clcik")
+                        Text("Dragon Ball AF")
+                       
                     }
                 icon: {
                     Circle()
