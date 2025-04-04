@@ -8,7 +8,7 @@ import SwiftUI
 
 
 class PlaceHolderAPI: Codable {
-    let url_de_servicio = "https://jsonplaceholder.typicode.com" // URl de la ubicacion o fuente de todos los demas recursos
+    let url_base = "https://jsonplaceholder.typicode.com" // URl de la ubicacion o fuente de todos los demas recursos
     
     func descargar_publicaciones() async  -> [Publicacion]? {
         let ubicacion_recurso = "/posts"
@@ -27,7 +27,7 @@ class PlaceHolderAPI: Codable {
     
     private func descargar<TipoGenerico: Codable>(recurso: String) async  -> TipoGenerico? {
         do {
-            guard let url = URL(string: "\(url_de_servicio)\(recurso)") else { throw ErroresDeRed.badUrl }
+            guard let url = URL(string: "\(url_base)\(recurso)") else { throw ErroresDeRed.badUrl }
             let (datos, respuesta) = try await URLSession.shared.data(from: url)
             guard let respuesta = respuesta as? HTTPURLResponse else { throw ErroresDeRed.badResponse }
             guard respuesta.statusCode >= 200 && respuesta.statusCode < 300  else { throw ErroresDeRed.badStatus }

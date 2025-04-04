@@ -24,3 +24,4 @@ struct PaginaResultados: Codable{
     let meta: Meta
     let links: Enlaces
 }
+

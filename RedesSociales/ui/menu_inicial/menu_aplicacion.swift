@@ -18,7 +18,7 @@ struct MenuNavegacion: View {
                 .tabItem { Label("esta es uan pantalla", systemImage: "Circlke") }
                 .badge(controlador.publicaciones.count)
             
-            Text("Hola dos")
+       PantallaPersonajes()
                 .tabItem {
                     Label{
                         Text("Dragon Ball AF")

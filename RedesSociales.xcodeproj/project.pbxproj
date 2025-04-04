@@ -27,6 +27,7 @@
 		FBE6AF982D9461AF0033557F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6AF972D9461AF0033557F /* ContentView.swift */; };
 		FBE6AFAB2D9462AD0033557F /* publicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6AFAA2D9462AD0033557F /* publicacion.swift */; };
 		FBE6AFAD2D9463440033557F /* comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6AFAC2D9463440033557F /* comentario.swift */; };
+		FBE725272DA0341D0095DA93 /* PantallaPersonajes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE725262DA0341D0095DA93 /* PantallaPersonajes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		FBE6AF972D9461AF0033557F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBE6AFAA2D9462AD0033557F /* publicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicacion.swift; sourceTree = "<group>"; };
 		FBE6AFAC2D9463440033557F /* comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comentario.swift; sourceTree = "<group>"; };
+		FBE725262DA0341D0095DA93 /* PantallaPersonajes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaPersonajes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,9 +174,11 @@
 		FBE6AFA62D9462550033557F /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				FBE725252DA034060095DA93 /* New Group */,
 				FB8233152D9AEC030043AEC7 /* menu_inicial */,
 				FB8233042D9AE6DC0043AEC7 /* perfil_basico */,
 				FBE6AFA72D9462620033557F /* publicaciones */,
+				FBE725262DA0341D0095DA93 /* PantallaPersonajes.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -186,6 +190,13 @@
 				FB82330F2D9AE7EB0043AEC7 /* publicaciones_generales.swift */,
 			);
 			path = publicaciones;
+			sourceTree = "<group>";
+		};
+		FBE725252DA034060095DA93 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 				FB82330A2D9AE7410043AEC7 /* placeholder_api.swift in Sources */,
 				FBBFF13A2D9D9668004B0B2F /* planeta.swift in Sources */,
 				FB8233142D9AE89D0043AEC7 /* controlador_app.swift in Sources */,
+				FBE725272DA0341D0095DA93 /* PantallaPersonajes.swift in Sources */,
 				FBE6AFAB2D9462AD0033557F /* publicacion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RedesSociales/Preview Content\"";
+				DEVELOPMENT_TEAM = 4TVSDW6T57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -438,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RedesSociales/Preview Content\"";
+				DEVELOPMENT_TEAM = 4TVSDW6T57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

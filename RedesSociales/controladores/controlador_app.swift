@@ -16,6 +16,8 @@ public class ControladorAplicacion{
     var publicacion_seleccionada: Publicacion? = nil
     var perfil_a_mostar: Perfil? = nil
     
+    var pagina_resultados: PaginaResultados? = nil
+    
     
     init(){
         Task.detached(priority: .high){
@@ -24,7 +26,9 @@ public class ControladorAplicacion{
         }
     }
     func descargar_monos_chinos() async {
-        await print(DragonballAPI().descargar_pagina_personaje())
+        guard let pagina_descargada: PaginaResultados = try? await DragonballAPI().descargar_pagina_personaje() else {return}
+        
+        self.pagina_resultados = pagina_descargada
     }
     
     func descargar_publicaciones() async {
