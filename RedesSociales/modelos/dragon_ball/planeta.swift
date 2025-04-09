@@ -2,13 +2,13 @@
 //  planeta.swift
 //  RedesSociales
 //
-//  Created by alumno on 4/2/25.
+//  Created by Jadzia Gallegos on 02/04/25.
 //
 
 struct Planeta: Identifiable, Codable{
     let id: Int
-        let name: String
-        let isDestroyed: String
-        let description: String
-        let image: String
- }
+    let name: String
+    let isDestroyed: Bool
+    let description: String
+    let image: String
+}

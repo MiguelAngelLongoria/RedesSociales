@@ -83,6 +83,14 @@
 			path = menu_inicial;
 			sourceTree = "<group>";
 		};
+		FBBE6B482DA42FFA00442D20 /* dragon_bal */ = {
+			isa = PBXGroup;
+			children = (
+				FBE725262DA0341D0095DA93 /* PantallaPersonajes.swift */,
+			);
+			path = dragon_bal;
+			sourceTree = "<group>";
+		};
 		FBBFF1362D9D93F5004B0B2F /* dragon_ball */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,11 +182,10 @@
 		FBE6AFA62D9462550033557F /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				FBE725252DA034060095DA93 /* New Group */,
+				FBBE6B482DA42FFA00442D20 /* dragon_bal */,
 				FB8233152D9AEC030043AEC7 /* menu_inicial */,
 				FB8233042D9AE6DC0043AEC7 /* perfil_basico */,
 				FBE6AFA72D9462620033557F /* publicaciones */,
-				FBE725262DA0341D0095DA93 /* PantallaPersonajes.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -190,13 +197,6 @@
 				FB82330F2D9AE7EB0043AEC7 /* publicaciones_generales.swift */,
 			);
 			path = publicaciones;
-			sourceTree = "<group>";
-		};
-		FBE725252DA034060095DA93 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

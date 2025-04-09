@@ -1,47 +1,51 @@
 //
-//  menu_aplicacion.swift
+//  menu_apliacion.swift
 //  RedesSociales
 //
-//  Created by alumno on 3/31/25.
+//  Created by Jadzia Gallegos on 31/03/25.
 //
-
 import SwiftUI
+
+
+//https://stackoverflow.com/questions/69309689/ios-15-swiftui-tabview-tab-bar-appearance-doesnt-update-between-views
+
+// https://developer.apple.com/documentation/swiftui/label
+
 
 struct MenuNavegacion: View {
     @Environment(ControladorAplicacion.self) var controlador
+    
     var body: some View {
-        ZStack{
         TabView{
-           
             
             GeneralPublicaciones()
-                .tabItem { Label("esta es uan pantalla", systemImage: "Circlke") }
+                .tabItem{Label("Es esta pantalla \n otra parte", systemImage: "circle")}
                 .badge(controlador.publicaciones.count)
             
-       PantallaPersonajes()
-                .tabItem {
+            PantallaPersonajes()
+                .tabItem{
                     Label{
-                        Text("Dragon Ball AF")
-                       
+                        VStack{
+                            Text("Dragon Ball DB")
+                        }
+                        
+    
+                    } icon: {
+                        Circle()
+                            //.fill(person.profileColor)
+                            .frame(width: 44, height: 44, alignment: .center)
+                            .overlay(Text("JJ Abarhams"))
                     }
-                icon: {
-                    Circle()
-                        .frame(width: 44, height: 44,
-                               alignment: .center)
-                        .overlay(Text("jj abrhans"))
-                }
                 }
             
-            Text("Hola desdpe lptnalla 3")
-                .tabItem 
-            { Label("etiqueta de esta label", systemImage: "Circle") }
+            Text("HOla desde pantalla 3")
+                .tabItem{ Label("Etiqeuta de esta label", systemImage: "circle") }
+            
             /*
-            Tab ("Etiqueta", )
+            Tab("Etiqueta", systemImage: "Perfil"){
+                Text("Referencia a la pantalla")
             }
-        */
-            Spacer()
-                    
-        }
+             */
         }
     }
 }

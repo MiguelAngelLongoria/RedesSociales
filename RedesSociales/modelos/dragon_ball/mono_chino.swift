@@ -1,12 +1,12 @@
 //
-//  personaje.swift
+//  mono_chino.swift
 //  RedesSociales
 //
-//  Created by alumno on 4/2/25.
+//  Created by Jadzia Gallegos on 02/04/25.
 //
 
-struct MonoChino : Identifiable, Codable{
-    
+
+struct MonoChino: Identifiable, Codable{
     let id: Int
     let name: String
     let ki: String
@@ -16,9 +16,10 @@ struct MonoChino : Identifiable, Codable{
     let description: String
     let image: String
     let affiliation: String
-    
+
     let originPlanet: Planeta?
     
     //let transformations: Array<Transformacion>
-    let transformation: [Transformacion]?
+    let transformations: [Transformacion]?
 }
+

@@ -2,15 +2,15 @@
 //  dragonball_api.swift
 //  RedesSociales
 //
-//  Created by alumno on 4/2/25.
+//  Created by Jadzia Gallegos on 02/04/25.
 //
-
 import SwiftUI
 
-class DragonballAPI: Codable{
+
+class DragonBallAPI: Codable{
     let url_base = "https://dragonball-api.com/api"
     
-    func descargar_pagina_personaje() async -> PaginaResultados? {
+    func descargar_pagina_personajes() async -> PaginaResultados? {
         let ubicacion_recurso = "/characters"
         
         return await descargar(recurso: ubicacion_recurso)
@@ -26,16 +26,14 @@ class DragonballAPI: Codable{
             guard respuesta.statusCode >= 200 && respuesta.statusCode < 300  else { throw ErroresDeRed.badStatus }
             do{
                 let respuesta_decodificada = try JSONDecoder().decode(TipoGenerico.self, from: datos)
+                
                 return respuesta_decodificada
             }
-            
             catch let error as NSError{
-                print("el error en tu modeloes:\(error.debugDescription) ")
+                print("EL ERROR EN TU MODELO ES:\(error.debugDescription) ")
                 throw ErroresDeRed.fallaAlConvertirLaRespuesta
             }
-            
-            
- //           return respuesta_decodificada
+            //return respuesta_decodificada
         }
         
         catch ErroresDeRed.badUrl {
@@ -49,7 +47,7 @@ class DragonballAPI: Codable{
         }
         catch ErroresDeRed.fallaAlConvertirLaRespuesta {
             print("Tienes mal el modelo o la implementacion de este")
-            print("En dragonball app")
+            print("EN dragon ball api")
         }
         
         catch ErroresDeRed.invalidRequest {
