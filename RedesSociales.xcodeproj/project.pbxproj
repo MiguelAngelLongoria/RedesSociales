@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB57D5B52DC27AF4002E582B /* photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB57D5B42DC27AF4002E582B /* photo.swift */; };
 		FB8233082D9AE7270043AEC7 /* errores.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8233072D9AE7270043AEC7 /* errores.swift */; };
 		FB82330A2D9AE7410043AEC7 /* placeholder_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8233092D9AE7410043AEC7 /* placeholder_api.swift */; };
 		FB82330C2D9AE7660043AEC7 /* perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB82330B2D9AE7660043AEC7 /* perfil.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB57D5B42DC27AF4002E582B /* photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photo.swift; sourceTree = "<group>"; };
 		FB8233072D9AE7270043AEC7 /* errores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errores.swift; sourceTree = "<group>"; };
 		FB8233092D9AE7410043AEC7 /* placeholder_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder_api.swift; sourceTree = "<group>"; };
 		FB82330B2D9AE7660043AEC7 /* perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfil.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				FBE725262DA0341D0095DA93 /* PantallaPersonajes.swift */,
+				FB57D5B42DC27AF4002E582B /* photo.swift */,
 			);
 			path = dragon_bal;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				FBBFF13C2D9D9757004B0B2F /* Transformacion.swift in Sources */,
 				FBBFF1382D9D941A004B0B2F /* mono_chino.swift in Sources */,
 				FBBFF1412D9D9A90004B0B2F /* pagina_resultados.swift in Sources */,
+				FB57D5B52DC27AF4002E582B /* photo.swift in Sources */,
 				FB82330E2D9AE77E0043AEC7 /* Publicacion.swift in Sources */,
 				FBBFF13E2D9D98B8004B0B2F /* dragonball_api.swift in Sources */,
 				FB8233082D9AE7270043AEC7 /* errores.swift in Sources */,
